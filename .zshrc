@@ -64,11 +64,18 @@ export CPPFLAGS="-I$OPENSSL_ROOT/include"
 export PKG_CONFIG_PATH="$OPENSSL_ROOT/lib/pkgconfig"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$OPENSSL_ROOT"
 export PATH="$PATH:/Users/shimadakeigo/Developer/flutter/bin"  # flutter
+eval "$(gh completion -s zsh)"                                 # gh
+export EDITOR='nvim'                                           # nnn
+export VISUAL='nvim'
+export PAGER='less'
+export NNN_FALLBACK_OPENER=xdg-open
+export NNN_DE_FILE_MANAGER=caja
+export NNN_COPIER="$HOME/.config/nnn/copier.sh"
 
 
 
 ##################################################
-### aliases 
+### aliases
 # git系
 alias g='git'
 alias gs='git status'
@@ -103,9 +110,9 @@ alias vim='nvim'
 alias view='nvim -R'
 
 # ls系
-alias ls='ls -FG'
-alias la='ls -a'
-alias ll='ls -lhaFG'
+alias ls='exa -FG --git --time-style=long-iso'
+alias la='exa -a --git --time-style=long-iso'
+alias ll='exa -abghHliSG --git --time-style=long-iso'
 
 # brew系
 alias brew='arch -arm64 brew'
@@ -176,6 +183,8 @@ function removegomi () {
 alias rmgomi=removegomi
 alias cat='bat'
 alias ram='sudo purge'
+alias tree='exa --tree'
+alias find='fd -e'
 
 
 ##################################################
@@ -215,10 +224,10 @@ setopt interactive_comments  # '#' 以降をコメントとして扱う
 ### vcs_info
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
- 
+
 zstyle ':vcs_info:*' formats '%F{green}(%s)-[%b]%f'
 zstyle ':vcs_info:*' actionformats '%F{red}(%s)-[%b|%a]%f'
- 
+
 function _update_vcs_info_msg() {
     LANG=en_US.UTF-8 vcs_info
     RPROMPT="${vcs_info_msg_0_}"
