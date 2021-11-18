@@ -71,7 +71,7 @@ export PAGER='less'
 export NNN_FALLBACK_OPENER=xdg-open
 export NNN_DE_FILE_MANAGER=caja
 export NNN_COPIER="$HOME/.config/nnn/copier.sh"
-
+eval $(thefuck --alias)                                        # thefuck
 
 
 ##################################################
@@ -185,6 +185,7 @@ alias cat='bat'
 alias ram='sudo purge'
 alias tree='exa --tree'
 alias find='fd -e'
+alias mans='tldr'
 
 
 ##################################################

@@ -14,46 +14,58 @@ brew upgrade
 
 
 formulas=(
-    autoconf     # configure生成
-    awscli       # awsの管理
-    asciinema    # ターミナルセッションの記録とWeb上での共有
-    # bat          # catの代替コマンド，zinitにてインストール済，干渉しないようコメントアウト
-    ctop         # コンテナ用のモニタリングツール
-    # dat          # ?
-    exa          # ls，treeの代替コマンド
-    ffmpeg       # フリーの動画変換・編集ツール
-    fd           # findの代替コマンド
-    # fish         # シェル，zshで十分なのでコメントアウト
-    gh           # GitHubの操作を行えるCLIツール
-    git          # 分散型バージョン管理システム
-    # gitui      # GitKrakenとghで十分なのでコメントアウト
-    imagemagick  # 画像変換・編集ツール
-    jrnl         # ターミナルから利用できる記録ツール
-    mas          # Mac App Storeをコマンドラインから操れるツール
-    mysql        # オープンソースのリレーショナルデータベース管理システム(RDBMS)
-    navi         # コマンドで見れるチートシート
-    # nb           # ?
-    neovim       # テキストエディタ
-    neofetch     # システム情報を表示するツール
-    nodebrew     # Node.jsのバージョン管理ツール，anyenv→nodenv→node.jsが良さげ
-    nnn          # ファイルマネージャ
-    pandoc       # ドキュメント・コンバータ
-    procs        # プロセス表示・検索ツール
-    poppler      # pdfをppm形式にするツール，ImageMagickのconvertコマンドと併用
-    pstree       # プロセスのツリーを表示するツール
-    sampler      #
-    sd           #
-    sqlite       # 単独のアプリケーションとして動作が可能なリレーショナルデータベース管理システム(RDBMS)
-    # starship     # zinit経由でpowerlevel10k導入しているのでコメントアウト
-    taskell      #
-    thefuck      #
-    tldr         #
-    tmux         #
-    tmuxinator   #
-    tree         # ディレクトリ配下のファイル構造をツリー上に表示するコマンド
-    warp         #
-    xsel         # クリップボードにアクセスするツール
-    yarn         #
+    autoconf          # configure生成
+    awscli            # awsの管理
+    asciinema         # ターミナルセッションの記録とWeb上での共有
+    # bat               # catの代替コマンド，zinitにてインストール済，干渉しないようコメントアウト
+    berkeley-db       # 組込みのKey-Value型データベース・ライブラリ，Cで実装
+    betterzipql       # 圧縮ファイルの中身を表示
+    brotli            #
+    ctop              # コンテナ用のモニタリングツール
+    # dat               # ?
+    exa               # ls，treeの代替コマンド
+    ffmpeg            # フリーの動画変換・編集ツール
+    fd                # findの代替コマンド
+    # fish              # シェル，zshで十分なのでコメントアウト
+    gh                # GitHubの操作を行えるCLIツール
+    git               # 分散型バージョン管理システム
+    # gitui           # GitKrakenとghで十分なのでコメントアウト
+    imagemagick       # 画像変換・編集ツール
+    jrnl              # ターミナルから利用できる記録ツール
+    mas               # Mac App Storeをコマンドラインから操れるツール
+    mysql             # オープンソースのリレーショナルデータベース管理システム(RDBMS)
+    navi              # コマンドで見れるチートシート
+    # nb                # ?
+    neovim            # テキストエディタ
+    neofetch          # システム情報を表示するツール
+    nodebrew          # Node.jsのバージョン管理ツール，anyenv→nodenv→node.jsが良さげ
+    nnn               # ファイルマネージャ
+    pandoc            # ドキュメント・コンバータ
+    procs             # プロセス表示・検索ツール
+    poppler           # pdfをppm形式にするツール，ImageMagickのconvertコマンドと併用
+    pstree            # プロセスのツリーを表示するツール
+    qlcolorcode       # ソースファイルをシンタックスハイライトして表示
+    qlstephen         # プレーンテキストファイルを拡張子なしで表示
+    qlmarkdown        # マークダウンファイルを整形して表示
+    qlprettypatch     # パッチファイルを表示
+    qlimagesize       # 画像を表示するときにタイトルバーに画像サイズを表示
+    quicklook-csv     # CSV ファイルを整形して表示
+    quicklook-json    # JSON ファイルを整形して表示
+    sampler           #
+    sd                #
+    sqlite            # 単独のアプリケーションとして動作が可能なリレーショナルデータベース管理システム(RDBMS)
+    # starship        # zinit経由でpowerlevel10k導入しているのでコメントアウト
+    suspicious-package  #
+    # taskell           # ?
+    thefuck           # コマンド補完
+    tldr              # 簡易的なmanコマンド
+    tmux              # 端末多重化ソフトウェア
+    tmuxinator        # tmuxで起動するセッションを予め定義しておき、コマンド一発でそのセッションを起動できるようにしたもの
+    tree              # ディレクトリ配下のファイル構造をツリー上に表示するコマンド
+    # warp              # ?
+    webpquicklook     # .webp 画像を表示
+    xsel              # クリップボードにアクセスするツール
+    yarn              # JavaScriptのパッケージマネージャ
 )
 
 echo "brew tap"
