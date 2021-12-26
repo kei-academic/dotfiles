@@ -182,6 +182,7 @@ function removegomi () {
 }
 alias rmgomi=removegomi
 alias cat='bat'
+alias copy='pbcopy'
 alias ram='sudo purge'
 alias tree='exa --tree'
 alias find='fd -e'
