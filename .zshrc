@@ -194,9 +194,9 @@ alias mans='tldr'
 ##################################################
 ### オプション
 ## history関連
-HISTFILE=~/.zsh_history        # ヒストリ(履歴)を保存、数を増やす
-HISTSIZE=100000
-SAVEHIST=100000
+export HISTFILE=~/.zsh_history        # ヒストリ(履歴)を保存、数を増やす
+export HISTSIZE=10000
+export SAVEHIST=100000
 
 setopt inc_append_history      # 実行時に履歴をファイルに追加していく
 setopt share_history           # 同時に起動しているzshの間でhistoryを共有する
